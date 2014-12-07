@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-extend",
+  "version": "0.0.1",
+  "author": "Ben Regenspan <bregenspan@gmail.com>",
+  "description": "ESLint rules to enforce safe usage of jQuery/Underscore/compatible extend() functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/lib/rules/",
+    "lint": "node ./node_modules/eslint/bin/eslint.js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bregenspan/eslint-plugin-extend"
+  },
+  "homepage": "https://github.com/bregenspan/eslint-plugin-extend",
+  "bugs": "https://github.com/bregenspan/eslint-plugin-extend/issues/",
+  "devDependencies": {
+    "eslint-tester": "0.3.0",
+    "eslint": ">=0.8.0",
+    "mocha": "~1.13.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=0.8.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "jquery",
+    "underscore",
+    "lint"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
