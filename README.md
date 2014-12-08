@@ -33,12 +33,12 @@ Here, `newObject` now points to a third object: the object literal that we passe
 Forgetting to pass in an object literal as the first argument is a common mistake that leads to undesired side effects. Consider the following statement from a dinosaur genome management application built on a fictional MVC framework:
 
 ```js
-var DinosaurCapableOfReproduction = ModelFactory(_.extend(Dinosaur, {
+var HerbivorousDinosaurWeAreNotTooAfraidOf = _.extend(Model.Dinosaur, {
     fillGapsWithIffyFrogDNASequence: true
-}));
+});
 ```
 
-Here, the goal was clearly to create a subset of Dinosaur with the specified `fillGapsWithIffyFrogDNASequence` property defined on it, but we inadvertently modified the Dinosaur itself and are in for a nasty surprise.
+Here, the goal was clearly to create a subset of `Dinosaur` with the specified `fillGapsWithIffyFrogDNASequence` property defined on it, but we inadvertently modified the Dinosaur itself and are in for a nasty surprise.
 
 The [rules](docs/rules) added by this plugin allow you to catch this kind of dumb use of `_.extend` early on, hopefully preventing the need for a lot of future debugging and reducing the number of lawsuits aimed at your live dinosaur theme park.
 
