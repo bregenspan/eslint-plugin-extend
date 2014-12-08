@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-extend",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Ben Regenspan <bregenspan@gmail.com>",
   "description": "ESLint rules to enforce safe usage of jQuery/Underscore/compatible extend() functions",
   "main": "index.js",

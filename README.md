@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bregenspan/eslint-plugin-extend.svg)](https://travis-ci.org/bregenspan/eslint-plugin-extend)
+
 # eslint-plugin-extend
 
 ESLint rules for enforcing safe use of Underscore's [_.extend()](http://underscorejs.org/#extend), jQuery's [$.extend()](http://api.jquery.com/jquery.extend/), and compatible implementations.

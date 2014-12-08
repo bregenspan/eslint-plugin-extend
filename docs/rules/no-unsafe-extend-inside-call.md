@@ -14,7 +14,7 @@ This rule disallows usage of `extend()` functions in cases that meet all of the 
 This is an example configuration which enables the rule and looks for unsafe uses of _.extend(), jQuery.extend(), and _.extend():
 ```js
 ...
-"no-unsafe-extend-inside-call": [2, { "libraryNames": ["_", "jQuery", "$"] }]
+"extend/no-unsafe-extend-inside-call": [2, { "libraryNames": ["_", "jQuery", "$"] }]
 ...
 ```
 
