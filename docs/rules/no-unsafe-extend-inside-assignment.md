@@ -2,7 +2,7 @@
 
 ## Why use it?
 
-See [the README](../../README.md]).
+See [the README](../../README.md).
 
 ## Rule Details
 
