@@ -5,8 +5,8 @@
   "description": "ESLint rules to enforce safe usage of jQuery/Underscore/compatible extend() functions",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/lib/rules/",
-    "lint": "node ./node_modules/eslint/bin/eslint.js ."
+    "test": "npm run-script lint && mocha tests/lib/rules/",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
