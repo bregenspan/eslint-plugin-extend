@@ -23,6 +23,12 @@ eslintTester.addRuleTest("lib/rules/no-unsafe-extend-inside-call", {
         {
             code: "doSomethingWithoutASideEffect(_.extend({}, object1, object2))",
             args: [2, { "libraryNames": ["_"] } ]
+        },
+
+        // Issue #1
+        {
+            code: "doSomethingWithoutASideEffect(function () { _.extend(object1, object2); })",
+            args: [2, { "libraryNames": ["_"] } ]
         }
     ],
 

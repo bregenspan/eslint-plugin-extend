@@ -23,6 +23,12 @@ eslintTester.addRuleTest("lib/rules/no-unsafe-extend-inside-assignment", {
         {
             code: "var objectC = _.extend({}, objectA, objectB)",
             args: [2, { "libraryNames": ["_"] } ]
+        },
+
+        // Issue #1
+        {
+            code: "var objectC = function () { _.extend(objectA, objectB); return false; }",
+            args: [2, { "libraryNames": ["_"] } ]
         }
     ],
 
