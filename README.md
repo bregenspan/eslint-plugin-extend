@@ -2,15 +2,15 @@
 
 # eslint-plugin-extend
 
-ESLint rules for enforcing safe use of Underscore's [_.extend()](http://underscorejs.org/#extend), jQuery's [$.extend()](http://api.jquery.com/jquery.extend/), and compatible implementations.
+ESLint rules for enforcing safe use of Underscore's [`_.extend()`](http://underscorejs.org/#extend), jQuery's [`$.extend()`](http://api.jquery.com/jquery.extend/), and compatible implementations.
 
 ## Why Use It
 
 ### TLDR
 
-If you or someone else on your team (despite being utterly brilliant, knowledgeable, and near-perfect) sometimes gets confused by the signature of _.extend() / $.extend() and accidentally modifies a source object rather than the destination object.
+If you or someone else on your team sometimes gets confused by the signature of `_.extend()` / `$.extend()` and accidentally modifies a source object rather than the destination object, this rule might be for you.
 
-### The full, wildly exciting details
+### Details
 
 The Underscore library's <a href="http://underscorejs.org/#extend">`_.extend()`</a> function and jQuery's <a href="http://api.jquery.com/jQuery.extend/">`$.extend()`</a> are both used to copy properties of one or more source objects to a specified destination object; they also return the destination object.
 
